@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money master</title>
+
+    <!-- boostrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- container start -->
+     <div class="container mt-4 bg-light.bg-gradient">
+       <!-- header start -->
+      <h1 class="text-center mb-5 text-success">Money master</h1>
+      <!-- header end -->
+        <div class="row">
+          <!-- add saving picture -->
+          <div class="col-12 col-lg-6 mb-4">
+            <img class="img-fluid" src="Background.png" alt="">
+          </div>
+          <div class="col-12 col-lg-6">
+            <!-- income section start -->
+            <h5 class="mb-4 ms-5 text= fw-bold text-success ">Income</h5>
+           <p class="fw-bold mb-4"> Income: <input type="text" class="border-0 bg-secondary bg-opacity-25"></p>
+           <!-- income section end -->
+           <!-- expenses section start -->
+           <h3 class="ms-5 mb-4 text-info">Expenses</h3>
+           <p class="fw-bold"> Food: <input type="text" class="border-0 bg-secondary bg-opacity-25"></p>
+           <p class="fw-bold"> Rent: <input type="text" class="border-0 bg-secondary bg-opacity-25"></p>
+           <p class="fw-bold"> Clothes: <input type="text" class="border-0 bg-secondary bg-opacity-25"></p>
+        <!-- expenses section end -->
+        <!-- calculate button -->
+          <button class="bg-info text-white fw-bold border border-primary rounded-pill  px-3 py-1 mb-4">Calculate</button>
+          <!-- calculate button end -->
+          <!-- calculate total expenses and balance -->
+          <h5 class="fw-bold ms-4">Total Expences: <span id="total-expense"> 5500</span></h5>
+              <h5 class="fw-bold ms-5 mb-5">Balance: <span id="balance">4500</span></h5>
+              <!-- calculate total expenses and end -->
+              <!-- calculate saving amount and remaining balance -->
+              <h5 class="fw-bold">Save: <input id="total-price" class="border-0 bg-secondary bg-opacity-25"> % <button class="bg-info text-white fw-bold border border-primary rounded-pill px-3 py-1 mb-4 ms-4">Save</button></h5>
+          <h5 class="fw-bold ms-5">Saving Amount: <span>2000</span></h5>
+          <h5 class="fw-bold ms-5">Remaining Balance: <span>2500</span></h5>
+            <!-- calculate saving amount and remaining balance end -->
+          </div>
+          </div>
+        </div>
+      </div>
+     <!-- container end -->
+
+
+
+      
+   
+    <!-- external script sheet link -->
+    <script src="script.js"></script>
+    
+</body> 
+</html>
