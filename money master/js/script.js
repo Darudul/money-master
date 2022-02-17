@@ -26,16 +26,16 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
     incomeAmount < 0 ||
     incomeAmount == ""
   ) {
-    alert("please type number");
+    alert("please put amount");
     return;
   } else if (isNaN(foodInputText)) {
-    alert("please type number");
+    alert("please put amount");
     return;
   } else if (isNaN(rentInputText)) {
-    alert("please type number");
+    alert("please put amount");
     return;
   } else if (isNaN(incomeAmount)) {
-    alert("please type number");
+    alert("please put amount");
     return;
   }
 
@@ -83,10 +83,10 @@ document.getElementById("save-btn").addEventListener("click", function () {
     alert("please enter valid number");
     return;
   } else if (isNaN(incomeAmount)) {
-    alert("please type number");
+    alert("please put amount");
     return;
   } else if (isNaN(saveAmount)) {
-    alert("please type number");
+    alert("please put amount");
     return;
   }
   // call function
