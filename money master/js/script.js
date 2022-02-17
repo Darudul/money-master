@@ -8,19 +8,6 @@ function getInputValue(inputId) {
 // addEventListener on button
 document.getElementById("calculate-btn").addEventListener("click", function () {
   // console.log("test");
-
-  // const income = document.getElementById("income");
-  // const incomeAmount = parseFloat(income.value);
-  // const foodInput = document.getElementById("food-input");
-  // const foodInputText = parseFloat(foodInput.value);
-  // // console.log(foodInputText);
-  // const rentInput = document.getElementById("rent-input");
-  // const rentInputText = parseFloat(rentInput.value);
-  // // console.log(rentInputText);
-  // const clothesInput = document.getElementById("clothes-input");
-  // const clothesInputText = parseFloat(clothesInput.value);
-  // // console.log(clothesInputText);
-
   // call function
   const foodInputText = getInputValue("food-input");
   const rentInputText = getInputValue("rent-input");
@@ -39,9 +26,19 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
     incomeAmount < 0 ||
     incomeAmount == ""
   ) {
-    alert("please enter positive number");
+    alert("please type number");
+    return;
+  } else if (isNaN(foodInputText)) {
+    alert("please type number");
+    return;
+  } else if (isNaN(rentInputText)) {
+    alert("please type number");
+    return;
+  } else if (isNaN(incomeAmount)) {
+    alert("please type number");
     return;
   }
+
   // checking error message end
 
   // total expences start
@@ -53,7 +50,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const totalExpencesAmount = previousTotalExpencesAmount + totalExpensesText;
 
   if (incomeAmount < totalExpencesAmount) {
-    alert("please provide more money");
+    alert("You are not eligible for this amount");
     return;
   }
   totalExpenses.innerText = totalExpencesAmount;
@@ -71,12 +68,6 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
 
 // savings part start
 document.getElementById("save-btn").addEventListener("click", function () {
-  // const income = document.getElementById("income");
-  // const incomeAmount = parseFloat(income.value);
-
-  // const saveInput = document.getElementById("save-input");
-  // const saveAmount = parseFloat(saveInput.value);
-
   // call function
   const incomeAmount = getInputValue("income");
   const saveAmount = getInputValue("save-input");
@@ -91,8 +82,13 @@ document.getElementById("save-btn").addEventListener("click", function () {
   ) {
     alert("please enter valid number");
     return;
+  } else if (isNaN(incomeAmount)) {
+    alert("please type number");
+    return;
+  } else if (isNaN(saveAmount)) {
+    alert("please type number");
+    return;
   }
-
   // call function
   const foodInputText = getInputValue("food-input");
   const rentInputText = getInputValue("rent-input");
@@ -126,8 +122,6 @@ document.getElementById("save-btn").addEventListener("click", function () {
   savingAmount.innerText = savingAmountTotal;
   // save part end
 
-  // const balance = document.getElementById("balance");
-  // const balanceText = parseFloat(balance.innerText);
   //  reaining balance start
   const remaingBal = document.getElementById("remaining-balance");
   const remaingBalance = parseFloat(remaingBal.innerText);
