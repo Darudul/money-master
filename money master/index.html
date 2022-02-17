@@ -18,36 +18,36 @@
     <!-- container start -->
      <div class="container mt-4 bg-light.bg-gradient">
        <!-- header start -->
-      <h1 class="text-center mb-5 text-success">Money master</h1>
+      <h1 class="text-center mb-5 text-success">My Saving money in a amonth</h1>
       <!-- header end -->
         <div class="row">
           <!-- add saving picture -->
           <div class="col-12 col-lg-6 mb-4">
             <img class="img-fluid" src="Background.png" alt="">
           </div>
-          <div class="col-12 col-lg-6">
+          <div id="calculate-section" class="col-12 col-lg-6">
             <!-- income section start -->
-            <h5 class="mb-4 ms-5 text= fw-bold text-success ">Income</h5>
-           <p class="fw-bold mb-4"> Income: <input id="income" type="text" class="border-0 bg-secondary bg-opacity-25"></p>
+            <h5 id="income-field" class="mb-4 text= fw-bold text-success ">Income</h5>
+           <p id="income-blog" class="fw-bold mb-4"> Income: <input id="income" type="text" class="border-0 bg-secondary bg-opacity-25"></p>
            <!-- income section end -->
            <!-- expenses section start -->
-           <h3 class="ms-5 mb-4 text-info">Expenses</h3>
-           <p class="fw-bold"> Food: <input id="food-input" type="text" class="border-0 bg-secondary bg-opacity-25"></p>
-           <p class="fw-bold"> Rent: <input id="rent-input" type="text" class="border-0 bg-secondary bg-opacity-25"></p>
-           <p class="fw-bold"> Clothes: <input id="clothes-input" type="text" class="border-0 bg-secondary bg-opacity-25"></p>
+           <h3 id="expences-blog" class=" mb-4 text-info">Expenses</h3>
+           <p id="food-blog" class="fw-bold"> Food: <input id="food-input" type="text" class="border-0 bg-secondary bg-opacity-25"></p>
+           <p id="rent-blog" class="fw-bold"> Rent: <input id="rent-input" type="text" class="border-0 bg-secondary bg-opacity-25"></p>
+           <p id="cloth-blog" class="fw-bold"> Clothes: <input id="clothes-input" type="text" class="border-0 bg-secondary bg-opacity-25"></p>
            <span id="error"></span>
         <!-- expenses section end -->
         <!-- calculate button -->
           <button id="calculate-btn" class="bg-info text-white fw-bold border border-primary rounded-pill  px-3 py-1 mb-4">Calculate</button>
           <!-- calculate button end -->
           <!-- calculate total expenses and balance -->
-          <h5 id="add-margin" class="fw-bold ms-4">Total Expences: <span id="total-expenses">00</span></h5>
-              <h5 class="fw-bold ms-5 mb-5">Balance: <span id="balance">00</span></h5>
+          <h5 id="add-margin" class="fw-bold">Total Expences: <span id="total-expenses">00</span></h5>
+              <h5 class="fw-bold  mb-5">Balance: <span id="balance">00</span></h5>
               <!-- calculate total expenses and end -->
               <!-- calculate saving amount and remaining balance -->
               <h5 class="fw-bold">Save: <input id="save-input" class="border-0 bg-secondary bg-opacity-25"> % <button id="save-btn" class="bg-info text-white fw-bold border border-primary rounded-pill px-3 py-1 mb-4 ms-4">Save</button></h5>
-          <h5 class="fw-bold ms-5">Saving Amount: <span id="saving-amount">00</span></h5>
-          <h5 class="fw-bold ms-5">Remaining Balance: <span id="remaining-balance">00</span></h5>
+          <h5 class="fw-bold">Saving Amount: <span id="saving-amount">00</span></h5>
+          <h5 class="fw-bold">Remaining Balance: <span id="remaining-balance">00</span></h5>
             <!-- calculate saving amount and remaining balance end -->
           </div>
           </div>
