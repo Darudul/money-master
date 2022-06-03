@@ -5,7 +5,7 @@ function getInputValue(inputId) {
   return foodInputText;
 }
 
-// addEventListener on button
+// addEventListener on button gdtftfytgyfggf fxtctedgegt
 document.getElementById("calculate-btn").addEventListener("click", function () {
   // console.log("test");
   // call function
